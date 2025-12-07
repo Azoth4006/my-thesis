@@ -1,0 +1,23 @@
+{% macro op_symbol(op) -%}
+    {%- if op == 'and' -%}
+        && 
+    {%- elif op == 'or' -%}
+        || 
+    {%- elif op == 'plus' -%}
+        + 
+    {%- elif op == 'minus' -%}
+        - 
+    {%- elif op == 'lessThan' -%}
+        < 
+    {%- elif op == 'greaterThan' -%}
+        > 
+    {%- elif op == greaterThanOrEqualTo' -%}
+        >= 
+    {%- elif op == 'lessThanOrEqualTo' -%}
+        <= 
+    {%- elif op == 'equals' -%}
+        == 
+    {%- elif op == 'not' -%}
+        !
+    {%- endif -%}
+{%- endmacro %}
